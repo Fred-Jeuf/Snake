@@ -1,12 +1,12 @@
-import random
-import curses
+import random #to place the food
+import curses #to control the snake
 
 s = curses.initscr()
 curses.curs_set(0)
 sh, sw = s.getmaxyx()
 w = curses.newwin(sh, sw, 0, 0)
 w.keypad(1)
-w.timeout(100)
+w.timeout(100) #screen refresh every 100ms
 
 snk_x = sw/4
 snk_y = sh/2
