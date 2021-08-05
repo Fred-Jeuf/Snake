@@ -1,5 +1,5 @@
 import random #to place the food
-import curses #to control the snake..
+import curses #to control the snake....
 
 s = curses.initscr()
 curses.curs_set(0)
